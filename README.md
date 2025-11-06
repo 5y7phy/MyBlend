@@ -1,6 +1,7 @@
 # Starbucks Custom Lab
 
-Starbucks Custom Labは、スターバックスのカスタマイズをシミュレーションできるウェブアプリケーションです。
+Starbucks Custom Labは、スターバックスのカスタマイズを共有できるウェブアプリケーションです。
+https://5y7phy.github.io/Starbucks-Custom-Lab/
 
 ## 機能
 - カスタムドリンクの作成
