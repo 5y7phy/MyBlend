@@ -29,6 +29,7 @@ header {
     font: 20px 'arial black';
     color: white;
     padding: 10px;
+    padding-right: 10px;
     border: 4px;
   }
   .swiper {
