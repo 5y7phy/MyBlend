@@ -29,7 +29,7 @@ header {
   .title {
     margin-right: auto;
     font-family: 'Snell Roundhand', 'SignPainter', cursive;
-    font-size: 60px;
+    font-size: 60px !important; /* Reduced size to 60px */
     color: white;
     padding: 40px;
   }
