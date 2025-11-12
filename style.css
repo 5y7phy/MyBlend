@@ -18,7 +18,8 @@ header {
    
   .title {
     margin-right: auto;
-    font: 150px 'SignPainter';
+    font: 'SignPainter';
+    font-size: 120px;
     color: white;
     padding: 40px;
   }
