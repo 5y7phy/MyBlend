@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Snell Roundhand';
+  src: local('Snell Roundhand'), url('https://example.com/fonts/SnellRoundhand.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'SignPainter';
+  src: local('SignPainter'), url('https://example.com/fonts/SignPainter.woff') format('woff');
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -18,7 +28,7 @@ header {
    
   .title {
     margin-right: auto;
-    font-family: 'Snell Roundhand', 'SignPainter';
+    font-family: 'Snell Roundhand', 'SignPainter', cursive;
     font-size: 120px;
     color: white;
     padding: 40px;
