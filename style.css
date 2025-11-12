@@ -21,6 +21,9 @@ header {
     font: 30px 'arial black', 'Hiragino Sans W7';
     color: white;
     padding: 40px;
+    font-family: "Mogra", system-ui;
+    font-weight: 400;
+    font-style: normal;
   }
    
   .menu-item {
