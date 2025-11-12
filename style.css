@@ -18,7 +18,7 @@ header {
    
   .title {
     margin-right: auto;
-    font-family: 'SignPainter',sans-serif;
+    font: 30px 'SignPainter', 'Hiragino Sans W7';
     color: white;
     padding: 40px;
   }
