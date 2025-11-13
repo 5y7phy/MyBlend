@@ -50,23 +50,13 @@ header {
   }
 
   .swiper-slide {
-    display: flex;
-    justify-content: center; /* 子要素を中央に配置 */
-    align-items: center; /* 子要素を縦方向に中央に配置 */
-    width: 300px; /* 必要に応じて調整 */
-    height: 300px;
-    overflow: hidden;
     background-position: center;
     background-size: cover;
-    border-radius: 1rem; 
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
-}
+    width: 300px;
+    height: 300px;
+  }
 
   .swiper-slide img {
     display: block;
-    margin: auto; /* 画像を中央に配置 */
-    max-width: 80%; /* 画像を少し小さくする */
-    height: auto; /* アスペクト比を維持 */
-    object-fit: contain; /* 画像全体を表示 */
-    object-position: center; /* 中央に配置 */
-}
+    width: 100%;
+  }
