@@ -1,3 +1,4 @@
+/* 外部フォントの指定 (環境の制約によりロードはされません) */
 @font-face {
   font-family: 'Snell Roundhand';
   src: local('Snell Roundhand'), url('https://example.com/fonts/SnellRoundhand.woff') format('woff');
@@ -8,13 +9,22 @@
   src: local('SignPainter'), url('https://example.com/fonts/SignPainter.woff') format('woff');
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+:root {
+    font-family: 'Inter', sans-serif;
 }
+
+/* Base Styles */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 body {
     margin: 0;
+    background-color: #f9fafb;
 }
+
+/* Header Styles */
 header {
     top: 0;
     display: flex;
@@ -24,49 +34,107 @@ header {
     align-items: center;
     margin-right: auto;
     z-index: 1000;
-  }
-   
-  .title {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Styles */
+.title {
     margin-right: auto;
-    font-family: 'SignPainter-HouseScript', cursive;
-    font-size: 60px !important; /* Reduced size to 60px */
+    /* ウェブセーフなcursiveフォントを使用 */
+    font-family: 'cursive', 'SignPainter', sans-serif;
+    font-size: 60px !important;
     color: white;
-    padding: 40px;
-  }
-   
-  .menu-item {
+    padding: 5px 40px;
+    line-height: 1;
+}
+
+/* Menu Item Styles */
+.menu-group {
+    display: flex; /* ナビゲーションを横並びにするために flex を適用 */
+    padding: 0;
+}
+
+.menu-item {
     list-style: none;
     display: inline-block;
-    font: 20px 'arial black';
+    font-family: 'Arial Black', sans-serif;
+    font-size: 20px;
     color: white;
     padding-left: 20px;
-    border: 4px;
-  }
+    border: 4px none;
+}
 
-  .swiper {
+/* Swiper general wrapper style */
+.swiper {
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
-  }
-
-  .swiper-slide {
-    display: flex;
-    justify-content: center; /* 子要素を中央に配置 */
-    align-items: center; /* 子要素を縦方向に中央に配置 */
-    width: 300px; /* 必要に応じて調整 */
-    height: 300px;
-    overflow: hidden;
-    background-position: center;
-    background-size: cover;
-    border-radius: 1rem; 
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
 }
 
-  .swiper-slide img {
+/* Swiper slide dimensions (300x300) */
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Swiper slide image dimensions (300px fixed width) */
+.swiper-slide img {
     display: block;
-    margin: auto; /* 画像を中央に配置 */
-    max-width: 80%; /* 画像を少し小さくする */
-    height: auto; /* アスペクト比を維持 */
-    object-fit: contain; /* 画像全体を表示 */
-    object-position: center; /* 中央に配置 */
+    width: 300px;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Section Title Style */
+.section-title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #047857;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* Responsive menu styling for mobile */
+@media (max-width: 767px) {
+    header {
+        flex-wrap: wrap;
+        height: auto;
+        padding-bottom: 0.5rem;
+    }
+    .title {
+        padding: 10px 20px;
+        font-size: 40px !important;
+    }
+    .nav {
+        width: 100%;
+        order: 3;
+        padding-right: 0;
+    }
+    .menu-group {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        width: 100%;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        padding-top: 0.5rem;
+    }
+    .menu-item {
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+        padding: 0.5rem 0;
+    }
 }
