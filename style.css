@@ -79,6 +79,7 @@ header {
     height: 300px;
     border-radius: 1rem;
     overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Swiper slide image dimensions (300px fixed width) */
@@ -86,6 +87,7 @@ header {
     display: block;
     width: 300px;
     height: 100%;
+    object-fit: cover;
 }
 
 /* Section Title Style */
