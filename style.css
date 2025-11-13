@@ -28,7 +28,7 @@ header {
    
   .title {
     margin-right: auto;
-    font-family: 'SignPainter-HouseScript', 'SignPainter', cursive;
+    font-family: 'SignPainter-HouseScript', cursive;
     font-size: 60px !important; /* Reduced size to 60px */
     color: white;
     padding: 40px;
