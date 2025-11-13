@@ -58,12 +58,5 @@ header {
 
   .swiper-slide img {
     display: block;
-    width: 100%;
-  }
-  img {
-    max-width: auto;
-    height: auto;
-    display: block;
-    margin: auto;
-    margin-top: 0px;
+    width: 300px;
   }
