@@ -52,8 +52,8 @@ header {
   .swiper-slide {
     background-position: center;
     background-size: cover;
-    width: 100px;
-    height: 100px;
+    width: 300px;
+    height: 300px;
   }
 
   .swiper-slide img {
