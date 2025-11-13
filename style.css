@@ -42,19 +42,6 @@ header {
     padding-left: 20px;
     border: 4px;
   }
-  body {
-    position: relative;
-    height: 100%;
-  }
-
-  body {
-    background: #000;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-  }
 
   .swiper {
     width: 100%;
