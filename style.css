@@ -64,8 +64,9 @@ header {
 
   .swiper-slide img {
     display: block;
+    margin: auto; /* 画像を中央に配置 */
     max-width: 100%; /* 親要素の幅に収める */
     height: auto; /* アスペクト比を維持 */
-    object-fit: cover;
-    object-position: center;
+    object-fit: contain; /* 画像全体を表示 */
+    object-position: center; /* 中央に配置 */
 }
