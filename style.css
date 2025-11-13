@@ -59,7 +59,7 @@ header {
   .swiper-slide img {
     display: block;
     margin: auto; /* 画像を中央に配置 */
-    max-width: 60%; /* 画像を少し小さくする */
+    max-width: 40%; /* 画像を少し小さくする */
     height: auto; /* アスペクト比を維持 */
     object-fit: contain; /* 画像全体を表示 */
     object-position: center; /* 中央に配置 */
