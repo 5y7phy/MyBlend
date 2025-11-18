@@ -28,7 +28,7 @@ header {
     display: inline-block;
     font: 20px 'arial black';
     color: white;
-    padding-left: 20px;
+    padding: 20px 20px;
     border: 4px;
   }
   .swiper {
