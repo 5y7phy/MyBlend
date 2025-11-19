@@ -45,3 +45,14 @@ async function getProducts() {
 // 使い方
 // addProduct("Latte", 5.50, ["drink", "coffee", "hot"]);
 // getProducts();
+
+document.addEventListener("DOMContentLoaded", () => {
+    const menuItems = document.querySelectorAll(".menu-item a");
+    const currentUrl = window.location.pathname.split("/").pop();
+
+    menuItems.forEach(item => {
+        if (item.getAttribute("href") === currentUrl) {
+            item.classList.add("current");
+        }
+    });
+});
